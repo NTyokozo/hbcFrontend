@@ -1,0 +1,38 @@
+
+
+
+<div class="jumbotron" ng-controller ="MeasurementsCtrl">
+
+        <div class="row">
+            <h3><span class="label label-info">Measurements</span></h3>
+
+            <form novalidate name="measurementForm"    ng-repeat="measure in measurements">
+
+
+            <table class="table" >
+
+                <tr>
+                    <td><label class="control-label col-m-2"> Patient Name </label></td>
+                    <td><label class="control-label col-m-2"> Date  </label></td>
+                    <td><label class="control-label col-m-2"> Blood Pressure </label></td>
+                    <td><label class="control-label col-m-2"> Weight </label></td>
+                    <td><label class="control-label col-m-2"> Temperature</label></td>
+
+                </tr>
+
+                <tr>
+                <td><input type="text" name="pname" class="form-control" >{{measure.patientID}}</td>
+                <td><input type="text" name="date" class="form-control" ng-model="measurement.patientID">{{measure.dateTaken}}</td>
+                <td><input type="text" name="bloodpressure" class="form-control">{{measure.bloodPressure}}</td>
+                <td><input type="text" name="weight" class="form-control">{{measure.weight}}</td>
+                <td><input type="text" name="temp" class="form-control">{{measure.temperature}}</td>
+            </tr>
+            </table>
+
+            <a href="" role="button" class="btn btn-success btn-lg">View</a>
+            <a href="#menu" role="button" class="btn btn-success btn-lg">Menu</a>
+            </form>
+        </div>
+
+</div>
+

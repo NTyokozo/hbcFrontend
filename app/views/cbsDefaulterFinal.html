@@ -1,0 +1,66 @@
+
+<div class="jumbotron"  >
+
+        <div class="row">
+            <div>
+
+                <h3><span class="label label-info">Defaulter followed up for</span></h3>
+
+
+                <table class="table">
+
+                    <tr>
+                        <td><label class="control-label col-m-2"> Chronic/Mental adherence </label></td>
+
+                        <td><select name="problem" class="form-control">
+                            <option value="Yes">no</option>
+                            <option value= "No">yes</option>
+                        </select> <br> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="control-label col-m-2"> Medical male circumcision </label></td>
+                        <td><select name="problem" class="form-control">
+                            <option value="Yes">no</option>
+                            <option value= "No">yes</option>
+                        </select> <br> </td>
+                    </tr>
+                    <tr>
+
+                      <td><label class="control-label col-m-2"> Other: Specify</label> </td>
+                        <td><input type="text" class="form-control" id="name" > </td>
+                    </tr>
+                    <div ng-controller="DatePickerCtrl">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <tr >
+
+                                    <td><label class="control-label col-m-2"> Date of follow up</label> </td>
+                                    <td> <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+
+                                     <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                    </td>
+                                </tr>
+                            </div>
+                        </div>
+            </div>
+
+
+                    <tr>
+
+                        <td><label class="control-label col-m-2">Patient date to return to facility</label> </td>
+                        <td><input type="text" class="form-control" id="dateFollow" > </td>
+                    </tr>
+
+
+                </table>
+
+
+                <a href="#" role="button" class="btn btn-success btn-lg">next</a>
+                <a href="#" role="button" class="btn btn-success btn-lg">back</a>
+            </div>
+
+    </div>
+</div>

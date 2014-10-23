@@ -1,0 +1,44 @@
+body{
+
+}
+#wrapper
+{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-style: solid;
+    margin: -210px 0px;
+    padding:inherit;
+}
+.spc {
+
+    background-color: red;
+    margin-right: 400px;
+    width : 300px;
+    height: 120px;
+    float: left;
+    margin-top: -300px;
+   margin-bottom: 10px;
+}
+.pcs
+{
+
+    /**margin-left: 350px;**/
+    width : 100px;
+    height: 100px;
+   margin: 240px 350px;
+    float: right;
+    background-color: blue;
+
+}
+td{
+    text-align: left;
+}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+

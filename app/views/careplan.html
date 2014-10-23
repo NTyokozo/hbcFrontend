@@ -1,0 +1,51 @@
+
+
+<div class="jumbotron" ng-controller ="CareplanCtrl">
+
+        <div class="row">
+            <h3><span class="label label-info">Care Plan</span></h3>
+
+            <form name="careplanForm"  novalidate>
+
+            <div ng-model="care in formdata" >
+            <table class="table">
+
+                <tr>
+                    <td><label class="control-label col-m-2"> Patient Name </label></td>
+                    <td><input type="text" name="pname" class="form-control"><!--{{care.patentId}}--></td>
+                </tr>
+                <tr>
+                    <td><label class="control-label col-m-2"> Coordinator Name  </label></td>
+                    <td><input type="text" name="cname" class="form-control"><!--{{care.coordinator}}--> </td>
+
+                </tr>
+                <tr>
+                    <td><label class="control-label col-m-2">Description </label></td>
+
+                </tr>
+
+                <tr>
+                    <td> <textarea name="description" cols="30" rows="4" class="form-control" ><!--{{care.description}}--></textarea><br></td>
+
+                </tr>
+                <tr>
+                    <td><label class="control-label col-m-2"> Start Date </label><!--{{care.en}}--></td>
+                    <td><input type="text" name="sdate" class="form-control"> </td>
+                </tr>
+                <tr>
+                    <td><label class="control-label col-m-2"> End Date </label></td>
+                    <td><input type="text" name="edate" class="form-control"> </td>
+                </tr>
+
+
+            </table>
+            </div>
+
+
+            <a href="#menu" role="button" class="btn btn-success btn-lg">Menu </a>
+            </form>
+
+
+
+    </div>
+</div>
